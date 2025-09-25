@@ -13,7 +13,11 @@ const Header = ({
         <div className="header-content">
           <div className="logo-section">
             <div className="logo">
-              <img src="/oau-logo.png" alt="OAU LOGO" />
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.5sDo7rVv90GEY3o7ome2LAHaHo?pid=ImgDet&w=178&h=183&c=7&dpr=1.5&o=7&rm=3"
+                alt="OAU Logo"
+                className="oau-logo"
+              />
             </div>
             <div className="brand-text">
               <h1>Campus Navigator</h1>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navigation from "./Navigation";
 
 const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -41,36 +42,35 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="page">
-      <div className="faq-container">
-        <div
-          className="about-card"
-          style={{ textAlign: "center", marginBottom: "2rem" }}
-        >
-          <h2>Frequently Asked Questions</h2>
-          <p>
-            Find answers to common questions about using the OAU Campus
-            Navigator
-          </p>
-        </div>
-
-        {faqItems.map((item, index) => (
-          <div key={index} className="faq-item">
-            <button className="faq-question" onClick={() => toggleFAQ(index)}>
-              {item.question}
-              <span
-                className={`faq-toggle ${openIndex === index ? "rotate" : ""}`}
-              >
-                +
-              </span>
-            </button>
-            <div className={`faq-answer ${openIndex === index ? "show" : ""}`}>
-              <p>{item.answer}</p>
-            </div>
-          </div>
-        ))}
+    // <div className="page">
+    <div className="faq-container">
+      <div
+        className="about-card"
+        style={{ textAlign: "center", marginBottom: "2rem" }}
+      >
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          Find answers to common questions about using the OAU Campus Navigator
+        </p>
       </div>
+
+      {faqItems.map((item, index) => (
+        <div key={index} className="faq-item">
+          <button className="faq-question" onClick={() => toggleFAQ(index)}>
+            {item.question}
+            <span
+              className={`faq-toggle ${openIndex === index ? "rotate" : ""}`}
+            >
+              +
+            </span>
+          </button>
+          <div className={`faq-answer ${openIndex === index ? "show" : ""}`}>
+            <p>{item.answer}</p>
+          </div>
+        </div>
+      ))}
     </div>
+    // </div>
   );
 };
 
