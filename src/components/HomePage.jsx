@@ -132,7 +132,7 @@ const HomePage = () => {
       {/* 🗺️ Map Section (right under search bar) */}
       <div
         className="map-section"
-        style={{ margin: "20px 0", height: "900px" }}
+        style={{ margin: "20px 0", height: "800px" }}
       >
         <MyMap
           locations={locations}

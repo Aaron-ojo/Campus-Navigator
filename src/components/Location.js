@@ -6,6 +6,7 @@ const locations = [
     lat: 7.51897059743468,
     lng: 4.52207138194439,
     image: "oduduwahall.jpg",
+    description: "Beside Amphitheter",
   },
   {
     name: "FTLT",
