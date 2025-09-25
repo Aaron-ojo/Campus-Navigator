@@ -130,7 +130,10 @@ const HomePage = () => {
       </div>
 
       {/* 🗺️ Map Section (right under search bar) */}
-      <div className="map-section" style={{ margin: "20px 0" }}>
+      <div
+        className="map-section"
+        style={{ margin: "20px 0", height: "900px" }}
+      >
         <MyMap
           locations={locations}
           setSelected={setSelectedLocation}
