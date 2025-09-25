@@ -74,44 +74,44 @@ const ChatbotPage = () => {
   }, [messages]);
 
   return (
-    <div className="page">
-      <div className="chatbot-container">
-        <div className="chatbot-header">
-          <h2>OAU Campus Assistant</h2>
-          <p>Ask me anything about campus locations and directions!</p>
-        </div>
+    // <div className="page">
+    <div className="chatbot-container">
+      <div className="chatbot-header">
+        <h2>OAU Campus Assistant</h2>
+        <p>Ask me anything about campus locations and directions!</p>
+      </div>
 
-        <div className="chat-area" ref={chatAreaRef}>
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`chat-message ${message.isUser ? "user" : "bot"}`}
-            >
-              <div className="message-bubble">{message.text}</div>
-            </div>
-          ))}
-          {isTyping && (
-            <div className="chat-message bot">
-              <div className="message-bubble">Typing...</div>
-            </div>
-          )}
-        </div>
+      <div className="chat-area" ref={chatAreaRef}>
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`chat-message ${message.isUser ? "user" : "bot"}`}
+          >
+            <div className="message-bubble">{message.text}</div>
+          </div>
+        ))}
+        {isTyping && (
+          <div className="chat-message bot">
+            <div className="message-bubble">Typing...</div>
+          </div>
+        )}
+      </div>
 
-        <div className="chat-input-area">
-          <input
-            type="text"
-            className="chat-input"
-            placeholder="Type your question here..."
-            value={inputMessage}
-            onChange={(e) => setInputMessage(e.target.value)}
-            onKeyPress={handleKeyPress}
-          />
-          <button className="send-btn" onClick={sendMessage}>
-            Send
-          </button>
-        </div>
+      <div className="chat-input-area">
+        <input
+          type="text"
+          className="chat-input"
+          placeholder="Type your question here..."
+          value={inputMessage}
+          onChange={(e) => setInputMessage(e.target.value)}
+          onKeyPress={handleKeyPress}
+        />
+        <button className="send-btn" onClick={sendMessage}>
+          Send
+        </button>
       </div>
     </div>
+    // </div>
   );
 };
 
