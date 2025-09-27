@@ -6,6 +6,7 @@ import AboutPage from "./components/AboutPage";
 import FAQPage from "./components/FAQPage";
 import AIAssistant from "./components/AIAssistant";
 import Footer from "./components/Footer";
+import MapPage from "./components/MapPage";
 
 function App() {
   const [activePage, setActivePage] = useState("home");
@@ -16,6 +17,7 @@ function App() {
     chatbot: <ChatbotPage />,
     about: <AboutPage />,
     faq: <FAQPage />,
+    map: <MapPage />,
   };
 
   const handleNavigation = (page) => {

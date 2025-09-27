@@ -8,6 +8,7 @@ const Navigation = ({
 }) => {
   const navItems = [
     { id: "home", label: "Home" },
+    { id: "map", label: "Maps" },
     { id: "about", label: "About" },
     { id: "faq", label: "FAQ" },
   ];
