@@ -97,7 +97,7 @@ const MapPage = () => {
       {/* 🗺️ Map Section */}
       <div
         className="map-section"
-        style={{ margin: "20px 0", height: "800px" }}
+        style={{ margin: "40px 0", height: "800px" }}
       >
         <MyMap
           locations={locations}
